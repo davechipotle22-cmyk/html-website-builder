@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Welcome to My Website</h1>
+      <p>A clean, responsive HTML starter template.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>This is a simple HTML/CSS/JS website template you can customize for any project.</p>
+    </section>
+
+    <section id="services" class="section">
+      <div class="cards">
+        <div class="card">
+          <h3>Design</h3>
+          <p>Clean and modern design that works on all devices.</p>
+        </div>
+        <div class="card">
+          <h3>Development</h3>
+          <p>Built with semantic HTML, CSS, and vanilla JavaScript.</p>
+        </div>
+        <div class="card">
+          <h3>Performance</h3>
+          <p>Lightweight and fast with no framework dependencies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
