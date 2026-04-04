@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>The 4 Bistro and Wine Bar | South Euclid, OH</title>
+  <meta name="description" content="The 4 Bistro and Wine Bar - Family recipes, curated wines, and soulful comfort food in South Euclid, Ohio. Named in honor of four children, built with love.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">MyWebsite</div>
+      <div class="logo">The 4 Bistro</div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#events">Events</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
@@ -21,47 +26,319 @@
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section id="home" class="hero">
-      <h1>Welcome to My Website</h1>
-      <p>A clean, responsive HTML starter template.</p>
-      <a href="#about" class="btn">Learn More</a>
-    </section>
-
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>This is a simple HTML/CSS/JS website template you can customize for any project.</p>
-    </section>
-
-    <section id="services" class="section">
-      <div class="cards">
-        <div class="card">
-          <h3>Design</h3>
-          <p>Clean and modern design that works on all devices.</p>
-        </div>
-        <div class="card">
-          <h3>Development</h3>
-          <p>Built with semantic HTML, CSS, and vanilla JavaScript.</p>
-        </div>
-        <div class="card">
-          <h3>Performance</h3>
-          <p>Lightweight and fast with no framework dependencies.</p>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-tagline">South Euclid, Ohio</p>
+        <h1>The 4 Bistro <span class="amp">&amp;</span> Wine Bar</h1>
+        <p class="hero-subtitle">Family recipes. Curated wines. Soulful flavors.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">View Menu</a>
+          <a href="#contact" class="btn btn-outline">Visit Us</a>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="section-inner">
+        <p class="section-label">Our Story</p>
+        <h2>A Family's Passion, Served with Love</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Rhonda Abercrombie's vision was to combine her family's passion for cooking with her love of people and community. The 4 Bistro and Wine Bar is affectionately named in honor of Rhonda's four children &mdash; a tribute to the family bonds that inspire every dish we serve.</p>
+            <p>We bring you delicious family recipes alongside a curated selection of wines and handcrafted cocktails. From our kitchen to your table, every plate is prepared with the warmth and care of a home-cooked meal.</p>
+            <p>Step inside and you'll find striking decor that enhances the dining experience and fosters a sense of belonging. Whether you're dining on our charming brick-stone patio or enjoying the vibrant atmosphere indoors, you're part of our family.</p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">&#127863;</span>
+              <h3>Curated Wines</h3>
+              <p>Hand-selected wines and craft cocktails</p>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#127860;</span>
+              <h3>Family Recipes</h3>
+              <p>Soulful comfort food made with love</p>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#127926;</span>
+              <h3>Live Entertainment</h3>
+              <p>Karaoke nights and live DJ performances</p>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#127881;</span>
+              <h3>Private Events</h3>
+              <p>Catering and private party hosting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section">
+      <div class="section-inner">
+        <p class="section-label">Our Menu</p>
+        <h2>Flavors That Bring People Together</h2>
+        <p class="section-description">From savory Cajun grits to our signature alfredo, every dish celebrates the soul of home cooking.</p>
+
+        <div class="menu-tabs">
+          <button class="menu-tab active" data-tab="specialties">The Four Specialties</button>
+          <button class="menu-tab" data-tab="appetizers">Appetizers</button>
+          <button class="menu-tab" data-tab="alfredo">The Four Alfredo</button>
+          <button class="menu-tab" data-tab="weekly">Weekly Specials</button>
+          <button class="menu-tab" data-tab="drinks">Drinks &amp; Cocktails</button>
+        </div>
+
+        <div class="menu-content">
+          <!-- Specialties -->
+          <div class="menu-panel active" id="tab-specialties">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>The 4 Burger with Tots</h3>
+                </div>
+                <p>Our signature juicy burger served with crispy seasoned tots</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Wing Ding Dinner</h3>
+                </div>
+                <p>Crispy barbecue wing dings with your choice of side</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Grilled Chicken Quesadilla</h3>
+                </div>
+                <p>Loaded with seasoned grilled chicken and melted cheese</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Roast Beef</h3>
+                </div>
+                <p>Slow-roasted to perfection with savory gravy</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Cajun Grits</h3>
+                </div>
+                <p>Creamy, savory grits with a Cajun kick</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Fresh Salads</h3>
+                </div>
+                <p>Crisp greens with house-made dressings</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Appetizers -->
+          <div class="menu-panel" id="tab-appetizers">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Barbecue Wing Dings</h3>
+                </div>
+                <p>Crispy wings tossed in our signature BBQ sauce</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Alfredo Flatbread</h3>
+                </div>
+                <p>Crispy flatbread topped with creamy alfredo and grilled chicken</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Seasoned Tots</h3>
+                </div>
+                <p>Golden crispy tots with our house seasoning blend</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alfredo -->
+          <div class="menu-panel" id="tab-alfredo">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Alfredo Pasta</h3>
+                </div>
+                <p>Classic creamy alfredo sauce over pasta with grilled chicken</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Chicken Alfredo Potato</h3>
+                </div>
+                <p>Loaded baked potato smothered in our signature alfredo</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Alfredo Over Rice</h3>
+                </div>
+                <p>Rich alfredo sauce served over fluffy seasoned rice</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weekly Specials -->
+          <div class="menu-panel" id="tab-weekly">
+            <div class="menu-grid">
+              <div class="menu-item special">
+                <span class="special-day">Thursdays</span>
+                <div class="menu-item-header">
+                  <h3>Taco Thursday</h3>
+                </div>
+                <p>Fresh tacos with all the fixings &mdash; a weekly fan favorite</p>
+              </div>
+              <div class="menu-item special">
+                <span class="special-day">Sundays</span>
+                <div class="menu-item-header">
+                  <h3>Soulfood Sunday</h3>
+                </div>
+                <p>Hearty soul food classics just like grandma used to make</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div class="menu-panel" id="tab-drinks">
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Peach Sunrise</h3>
+                </div>
+                <p>A refreshing cocktail with peach and citrus flavors</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Lemon Drop</h3>
+                </div>
+                <p>Classic lemon drop with a sugared rim</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>Red Sangria</h3>
+                </div>
+                <p>House-made red sangria with fresh fruit</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>House Wine Selection</h3>
+                </div>
+                <p>Curated red, white, and blush wines</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <h3>2You Wine Collection</h3>
+                </div>
+                <p>Our exclusive wine selection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events-section">
+      <div class="section-inner">
+        <p class="section-label">What's Happening</p>
+        <h2>Entertainment &amp; Events</h2>
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-icon">&#127908;</div>
+            <h3>Karaoke Nights</h3>
+            <p>Take the stage and show off your talent! Our karaoke nights are a crowd favorite, bringing together friends and family for an unforgettable evening.</p>
+          </div>
+          <div class="event-card">
+            <div class="event-icon">&#127911;</div>
+            <h3>Live DJ</h3>
+            <p>Enjoy curated beats from our live DJs while you dine and sip on your favorite cocktails. The perfect vibe for a night out.</p>
+          </div>
+          <div class="event-card">
+            <div class="event-icon">&#127863;</div>
+            <h3>Wine Tastings</h3>
+            <p>Explore our curated wine selection with guided tastings on our charming brick-stone patio. Discover your new favorite pour.</p>
+          </div>
+          <div class="event-card">
+            <div class="event-icon">&#127874;</div>
+            <h3>Private Parties &amp; Catering</h3>
+            <p>Celebrate your special moments with us. We offer private event hosting and full catering services for gatherings of all sizes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patio CTA Section -->
+    <section class="patio-section">
+      <div class="patio-overlay"></div>
+      <div class="patio-content">
+        <h2>Dine on Our Brick-Stone Patio</h2>
+        <p>Enjoy the open air, live entertainment, and our full menu in a charming outdoor setting.</p>
+        <a href="#contact" class="btn btn-primary">Reserve a Spot</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-inner">
+        <p class="section-label">Visit Us</p>
+        <h2>Come Be Part of Our Family</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>&#128205; Location</h3>
+              <p>4450 Mayfield Road<br>South Euclid, OH 44121</p>
+            </div>
+            <div class="contact-item">
+              <h3>&#128222; Phone</h3>
+              <p><a href="tel:+12168600364">(216) 860-0364</a></p>
+            </div>
+            <div class="contact-item">
+              <h3>&#128337; Hours</h3>
+              <p>Monday &ndash; Saturday: 9:00 AM &ndash; 5:00 PM<br>Sunday: Closed</p>
+            </div>
+            <div class="contact-item">
+              <h3>&#128241; Follow Us</h3>
+              <div class="social-links">
+                <a href="https://www.instagram.com/the4bistro/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/The4Bistro/" target="_blank" rel="noopener noreferrer">Facebook</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper">
+            <h3>Send Us a Message</h3>
+            <form id="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="tel" name="phone" placeholder="Your Phone (optional)">
+              <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">The 4 Bistro &amp; Wine Bar</p>
+        <p class="footer-tagline">Named in honor of four children. Built with love.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 The 4 Bistro and Wine Bar. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
