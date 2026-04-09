@@ -4,21 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Four Bistro and Wine Bar | South Euclid, OH</title>
-  <meta name="description" content="The Four Bistro and Wine Bar - Family recipes, curated wines, handcrafted cocktails, and catering in South Euclid, Ohio.">
+  <meta name="description" content="The Four Bistro and Wine Bar — family recipes, curated wines, and handcrafted cocktails in South Euclid, Ohio.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="The Four Bistro and Wine Bar">
+  <meta property="og:description" content="Family recipes, curated wines, and handcrafted cocktails in South Euclid, Ohio.">
+  <meta property="og:image" content="https://davechipotle22-cmyk.github.io/html-website-builder/images/interior.jpg">
+  <meta property="og:url" content="https://davechipotle22-cmyk.github.io/html-website-builder/">
+  <meta property="og:site_name" content="The Four Bistro and Wine Bar">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Four Bistro and Wine Bar">
+  <meta name="twitter:description" content="Family recipes, curated wines, and handcrafted cocktails in South Euclid, Ohio.">
+  <meta name="twitter:image" content="https://davechipotle22-cmyk.github.io/html-website-builder/images/interior.jpg">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Preloader -->
-  <div class="preloader" id="preloader">
-    <div class="preloader-inner">
-      <div class="preloader-logo">THE FOUR</div>
-      <div class="preloader-bar"><div class="preloader-fill"></div></div>
-    </div>
-  </div>
-
   <header>
     <nav id="navbar">
       <a href="#home" class="nav-logo">
@@ -47,7 +57,7 @@
     <section id="home" class="hero">
       <div class="hero-bg"></div>
       <div class="hero-content">
-        <div class="hero-badge">EST. South Euclid, Ohio</div>
+        <div class="hero-badge">South Euclid &middot; Ohio</div>
         <h1>
           <span class="hero-the">THE</span>
           <span class="hero-four">F<span class="hero-wine-o">O</span>UR</span>
@@ -87,7 +97,7 @@
             <div class="about-stats">
               <div class="stat">
                 <span class="stat-number">4</span>
-                <span class="stat-label">Children Honored</span>
+                <span class="stat-label">Inspirations</span>
               </div>
               <div class="stat">
                 <span class="stat-number">8+</span>
@@ -108,7 +118,7 @@
       <div class="container">
         <div class="section-header">
           <span class="section-label">The Menu</span>
-          <h2>Soulful Flavors, Made with Love</h2>
+          <h2>Soulful Flavors, Rooted in Family</h2>
           <p class="section-desc">From savory Cajun grits to our signature alfredo, every dish celebrates the soul of home cooking.</p>
         </div>
 
@@ -284,13 +294,17 @@
         </div>
         <div class="wine-grid">
           <div class="wine-card">
-            <div class="wine-icon">&#127863;</div>
+            <div class="wine-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 3h10l-1 8a5 5 0 0 1-4 4 5 5 0 0 1-4-4L7 3z"/><path d="M12 15v6"/><path d="M8 21h8"/></svg>
+            </div>
             <h3>House Wine</h3>
             <p>Carefully selected everyday pours perfect for any meal</p>
           </div>
           <div class="wine-card featured">
             <div class="wine-badge">Exclusive</div>
-            <div class="wine-icon">&#127942;</div>
+            <div class="wine-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="6"/><path d="M8.5 14.5L7 21l5-3 5 3-1.5-6.5"/><path d="M12 7v6"/><path d="M9 10h6"/></svg>
+            </div>
             <h3>2You Wine Collection</h3>
             <p>Our exclusive selection &mdash; exceptional quality and choice</p>
             <div class="wine-varieties">
@@ -300,7 +314,9 @@
             </div>
           </div>
           <div class="wine-card">
-            <div class="wine-icon">&#127870;</div>
+            <div class="wine-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10 2h4v4h-4z"/><path d="M9 6h6v3a3 3 0 0 1 2 2.83V20a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-8.17A3 3 0 0 1 9 9V6z"/><path d="M7 14h10"/></svg>
+            </div>
             <h3>Wine Tastings</h3>
             <p>Join us on the patio for guided tastings and discover your new favorite pour</p>
           </div>
@@ -321,23 +337,23 @@
             <p>Let The Four Bistro make your next event unforgettable. From intimate gatherings to larger celebrations, we bring soulful flavors and warm hospitality to every occasion.</p>
             <ul class="catering-features">
               <li>
-                <span class="check-icon">&#10003;</span>
+                <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></span>
                 Full-service catering with custom menus
               </li>
               <li>
-                <span class="check-icon">&#10003;</span>
+                <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></span>
                 Private party hosting at our venue
               </li>
               <li>
-                <span class="check-icon">&#10003;</span>
+                <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></span>
                 Cocktail and wine bar packages
               </li>
               <li>
-                <span class="check-icon">&#10003;</span>
+                <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></span>
                 Brick-stone patio available for events
               </li>
               <li>
-                <span class="check-icon">&#10003;</span>
+                <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></span>
                 Corporate events and celebrations
               </li>
             </ul>
@@ -353,19 +369,27 @@
       <div class="container">
         <div class="ent-grid">
           <div class="ent-item">
-            <div class="ent-icon">&#127908;</div>
+            <div class="ent-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2"/><path d="M12 19v3"/><path d="M8 22h8"/></svg>
+            </div>
             <h3>Karaoke Nights</h3>
           </div>
           <div class="ent-item">
-            <div class="ent-icon">&#127911;</div>
+            <div class="ent-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
             <h3>Live DJ</h3>
           </div>
           <div class="ent-item">
-            <div class="ent-icon">&#127863;</div>
+            <div class="ent-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 3h10l-1 8a5 5 0 0 1-4 4 5 5 0 0 1-4-4L7 3z"/><path d="M12 15v6"/><path d="M8 21h8"/></svg>
+            </div>
             <h3>Wine Tastings</h3>
           </div>
           <div class="ent-item">
-            <div class="ent-icon">&#127874;</div>
+            <div class="ent-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 9h16v12H4z"/><path d="M2 5h20v4H2z"/><path d="M12 5v16"/><path d="M12 5a3 3 0 0 1-3-3 3 3 0 0 1 3 3z"/><path d="M12 5a3 3 0 0 0 3-3 3 3 0 0 0-3 3z"/></svg>
+            </div>
             <h3>Private Events</h3>
           </div>
         </div>
@@ -400,12 +424,13 @@
           </div>
           <div class="contact-card contact-form-card">
             <h3>Send a Message</h3>
-            <form id="contact-form">
+            <form id="contact-form" novalidate>
               <input type="text" name="name" placeholder="Your Name" required>
               <input type="email" name="email" placeholder="Your Email" required>
               <input type="tel" name="phone" placeholder="Phone (optional)">
               <textarea name="message" placeholder="Your Message" rows="3" required></textarea>
-              <button type="submit" class="btn btn-gold btn-full">Send Message</button>
+              <button type="submit" class="btn btn-gold btn-full" id="contact-submit">Send Message</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
             </form>
           </div>
         </div>
@@ -425,7 +450,7 @@
             <span class="footer-logo-four">FOUR</span>
             <span class="footer-logo-sub">BISTRO AND WINE BAR</span>
           </div>
-          <p>Named in honor of four children. Built with love.</p>
+          <p>Named for Rhonda Abercrombie's four children.</p>
         </div>
         <div class="footer-nav">
           <h4>Navigate</h4>
