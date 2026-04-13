@@ -13,6 +13,7 @@
   --dark-3: #222222;
   --wine: #8B2332;
   --wine-dark: #6B1A27;
+  --wine-deep: var(--wine-deep);
   --wine-glow: rgba(139, 35, 50, 0.3);
   --gold: #C9A96E;
   --gold-light: #D4BA85;
@@ -24,7 +25,7 @@
   --text-light: #777777;
   --text-muted: #999999;
 
-  /* Spacing — 8pt scale */
+  /* Spacing - 8pt scale */
   --space-1: 0.25rem;  /* 4 */
   --space-2: 0.5rem;   /* 8 */
   --space-3: 0.75rem;  /* 12 */
@@ -88,6 +89,12 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
 }
 
 .container {
@@ -303,7 +310,7 @@ nav.scrolled {
   background:
     radial-gradient(ellipse at 30% 20%, var(--wine-glow) 0%, transparent 50%),
     radial-gradient(ellipse at 70% 80%, var(--gold-dim) 0%, transparent 50%),
-    linear-gradient(180deg, var(--black) 0%, #1a0a0d 40%, var(--dark) 100%);
+    linear-gradient(180deg, var(--black) 0%, var(--wine-deep) 40%, var(--dark) 100%);
 }
 
 .hero-bg::after {
@@ -773,7 +780,7 @@ nav.scrolled {
 
 /* ===== Wine Section ===== */
 .section-wine {
-  background: linear-gradient(135deg, var(--dark) 0%, #1a0a0d 50%, var(--dark-2) 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--wine-deep) 50%, var(--dark-2) 100%);
   color: var(--white);
 }
 
@@ -1100,7 +1107,8 @@ nav.scrolled {
 
 #contact-form input:focus,
 #contact-form textarea:focus {
-  outline: none;
+  outline: 2px solid var(--gold);
+  outline-offset: -1px;
   border-color: var(--gold);
 }
 
@@ -1229,7 +1237,7 @@ footer {
 
 /* ===== Image Placeholders ===== */
 img[src*="images/"] {
-  background: linear-gradient(135deg, #2a1a1d 0%, #1a1a2e 50%, #16213e 100%);
+  background: linear-gradient(135deg, var(--dark-2) 0%, var(--dark-3) 50%, var(--dark) 100%);
   min-height: 300px;
   position: relative;
 }

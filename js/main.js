@@ -88,7 +88,7 @@ document.querySelectorAll('.about-grid, .menu-content, .cocktails-layout, .wine-
   observer.observe(el);
 });
 
-// Contact form — inline loading + confirmation (no backend)
+// Contact form - inline loading + confirmation (no backend)
 const contactForm = document.getElementById('contact-form');
 const submitBtn = document.getElementById('contact-submit');
 const formStatus = document.getElementById('form-status');
@@ -111,7 +111,7 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
     submitBtn.textContent = originalLabel;
     submitBtn.disabled = false;
-    formStatus.textContent = 'Thanks — we\u2019ll be in touch soon.';
+    formStatus.textContent = 'Thanks! We\u2019ll be in touch soon.';
     formStatus.classList.add('visible');
   }, 900);
 
