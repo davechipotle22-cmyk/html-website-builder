@@ -1,17 +1,9 @@
-// Preloader
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.getElementById('preloader').classList.add('hidden');
-  }, 1400);
-});
-
 // Mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
-  // Animate hamburger
   menuToggle.classList.toggle('active');
 });
 
@@ -41,14 +33,12 @@ const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
 
-  // Navbar background
   if (scrollY > 50) {
     navbar.classList.add('scrolled');
   } else {
     navbar.classList.remove('scrolled');
   }
 
-  // Active nav link
   sections.forEach(section => {
     const top = section.offsetTop - 120;
     const height = section.offsetHeight;
@@ -82,30 +72,50 @@ menuTabs.forEach(tab => {
 });
 
 // Scroll animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
     }
   });
-}, observerOptions);
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+});
 
-// Add fade-in class to animatable elements
 document.querySelectorAll('.about-grid, .menu-content, .cocktails-layout, .wine-grid, .catering-layout, .contact-grid, .section-header').forEach(el => {
   el.classList.add('fade-in');
   observer.observe(el);
 });
 
-// Contact form handler
-document.getElementById('contact-form').addEventListener('submit', (e) => {
+// Contact form - inline loading + confirmation (no backend)
+const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('contact-submit');
+const formStatus = document.getElementById('form-status');
+
+contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData);
-  alert(`Thanks ${data.name}! Your message has been received. We'll be in touch soon.`);
-  e.target.reset();
+
+  if (!contactForm.checkValidity()) {
+    contactForm.reportValidity();
+    return;
+  }
+
+  const originalLabel = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+  formStatus.textContent = '';
+  formStatus.classList.remove('visible');
+
+  setTimeout(() => {
+    contactForm.reset();
+    submitBtn.textContent = originalLabel;
+    submitBtn.disabled = false;
+    formStatus.textContent = 'Thanks! We\u2019ll be in touch soon.';
+    formStatus.classList.add('visible');
+  }, 900);
+
+  setTimeout(() => {
+    formStatus.classList.remove('visible');
+  }, 5000);
 });
